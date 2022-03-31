@@ -17,6 +17,7 @@
 
     <modules>
         <module>dubbo-common</module>
+        <module>web-demo</module>
         <module>dubbo1-api</module>
         <module>dubbo1-service</module>
         <module>dubbo2-api</module>

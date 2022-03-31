@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo1-service/dubbo1-service.iml" filepath="$PROJECT_DIR$/dubbo1-service/dubbo1-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo2-api/dubbo2-api.iml" filepath="$PROJECT_DIR$/dubbo2-api/dubbo2-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo2-service/dubbo2-service.iml" filepath="$PROJECT_DIR$/dubbo2-service/dubbo2-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-demo/web-demo.iml" filepath="$PROJECT_DIR$/web-demo/web-demo.iml" />
     </modules>
   </component>
 </project>

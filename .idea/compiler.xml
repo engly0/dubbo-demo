@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo2-service" />
-        <module name="dubbo2-api" />
         <module name="dubbo-common" />
+        <module name="dubbo2-api" />
+        <module name="dubbo2-service" />
         <module name="dubbo1-service" />
         <module name="dubbo1-api" />
+        <module name="web-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -21,6 +22,7 @@
       <module name="dubbo1-service" target="1.8" />
       <module name="dubbo2-api" target="1.8" />
       <module name="dubbo2-service" target="1.8" />
+      <module name="web-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -30,6 +32,7 @@
       <module name="dubbo1-service" options="-parameters" />
       <module name="dubbo2-api" options="-parameters" />
       <module name="dubbo2-service" options="-parameters" />
+      <module name="web-demo" options="-parameters" />
     </option>
   </component>
 </project>

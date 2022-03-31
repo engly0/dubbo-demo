@@ -27,7 +27,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.5" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.32" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.0" level="project" />
-    <orderEntry type="module" module-name="dubbo2-api" />
+    <orderEntry type="module" module-name="dubbo1-api" />
     <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.6.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper-jute:3.6.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.yetus:audience-annotations:0.5.0" level="project" />
