@@ -2,15 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo1-api" />
+        <module name="dubbo2-service" />
         <module name="dubbo2-api" />
         <module name="dubbo-common" />
         <module name="dubbo1-service" />
-        <module name="dubbo2-service" />
+        <module name="dubbo1-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -24,11 +25,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="dubbo-common" options="-parameters -sourcepath $PROJECT_DIR$/dubbo-common/src/main/java" />
-      <module name="dubbo1-api" options="-parameters -sourcepath $PROJECT_DIR$/dubbo1-api/src/main/java" />
-      <module name="dubbo1-service" options="-parameters -sourcepath $PROJECT_DIR$/dubbo1-service/src/main/java" />
-      <module name="dubbo2-api" options="-parameters -sourcepath $PROJECT_DIR$/dubbo2-api/src/main/java" />
-      <module name="dubbo2-service" options="-parameters -sourcepath $PROJECT_DIR$/dubbo2-service/src/main/java" />
+      <module name="dubbo-common" options="-parameters" />
+      <module name="dubbo1-api" options="-parameters" />
+      <module name="dubbo1-service" options="-parameters" />
+      <module name="dubbo2-api" options="-parameters" />
+      <module name="dubbo2-service" options="-parameters" />
     </option>
   </component>
 </project>

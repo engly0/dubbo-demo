@@ -2,14 +2,14 @@
 <included>
 
     <appender name="applicationLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>/data/applogs/@service_name@/application.log</File>
+        <File>/data/applogs/dubbo1-service/application.log</File>
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
             <level>DEBUG</level>
             <level>TRACE</level>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/data/applogs/@service_name@/application.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <fileNamePattern>/data/applogs/dubbo1-service/application.log.%d{yyyy-MM-dd}.%i</fileNamePattern>
             <maxHistory>30</maxHistory>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>1000MB</maxFileSize>
@@ -21,9 +21,9 @@
     </appender>
 
     <appender name="applicationError" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>/data/applogs/@service_name@/error.log</File>
+        <File>/data/applogs/dubbo1-service/error.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/data/applogs/@service_name@/error.%d{yyyy-MM-dd}.log.%i</FileNamePattern>
+            <FileNamePattern>/data/applogs/dubbo1-service/error.%d{yyyy-MM-dd}.log.%i</FileNamePattern>
             <!--日志文件保留天数-->
             <MaxHistory>30</MaxHistory>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
@@ -61,7 +61,7 @@
         </encoder>
     </appender>
 
-    <root level="@log_level@">
-        <appender-ref ref="@log-appender@"/>
+    <root level="info">
+        <appender-ref ref="A1"/>
     </root>
 </included>

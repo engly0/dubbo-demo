@@ -4,6 +4,9 @@ spring:
   application:
     name: dubbo2-service
 
+server:
+  port: 8888
+
 app:
   name: dubbo2-service
 

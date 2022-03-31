@@ -10,6 +10,4 @@ dubbo:
     queues: 30000
   qos:
     enable: false
-  dubbo2:
-    group: dev
 

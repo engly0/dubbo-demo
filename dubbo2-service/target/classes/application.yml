@@ -1,11 +1,14 @@
 spring:
   profiles:
-    active: @profile_name@
+    active: dev
   application:
-    name: sales-stock-b
+    name: dubbo2-service
+
+server:
+  port: 8888
 
 app:
-  name: sales-stock-b
+  name: dubbo2-service
 
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*.xml
