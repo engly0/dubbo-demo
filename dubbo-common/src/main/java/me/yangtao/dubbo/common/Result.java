@@ -16,14 +16,17 @@ import java.io.Serializable;
 public class Result<T> implements Serializable {
     private static final long serialVersionUID = -8397719131140539797L;
 
-    private ErrorCodes code;
+    private int code;
 
     private String message;
 
     private T data;
 
     private Result(ErrorCodes code, String message, T data) {
-        this.code = code;
+        if(code == null){
+            code = ErrorCodes.OK;
+        }
+        this.code = code.getCode();
         this.message = message;
         this.data = data;
     }
