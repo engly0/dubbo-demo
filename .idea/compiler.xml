@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dubbo1-api" />
+        <module name="dubbo2-api" />
+        <module name="dubbo-common" />
+        <module name="dubbo1-service" />
+        <module name="dubbo2-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="dubbo-common" target="1.8" />
+      <module name="dubbo-demo" target="1.8" />
+      <module name="dubbo1-api" target="1.8" />
+      <module name="dubbo1-service" target="1.8" />
+      <module name="dubbo2-api" target="1.8" />
+      <module name="dubbo2-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo-common" options="-parameters -sourcepath $PROJECT_DIR$/dubbo-common/src/main/java" />
+      <module name="dubbo1-api" options="-parameters -sourcepath $PROJECT_DIR$/dubbo1-api/src/main/java" />
+      <module name="dubbo1-service" options="-parameters -sourcepath $PROJECT_DIR$/dubbo1-service/src/main/java" />
+      <module name="dubbo2-api" options="-parameters -sourcepath $PROJECT_DIR$/dubbo2-api/src/main/java" />
+      <module name="dubbo2-service" options="-parameters -sourcepath $PROJECT_DIR$/dubbo2-service/src/main/java" />
+    </option>
+  </component>
+</project>

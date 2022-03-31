@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: @profile_name@
+  application:
+    name: dubbo2-service
+
+app:
+  name: dubbo2-service
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml

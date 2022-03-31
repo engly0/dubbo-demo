@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: @profile_name@
+  application:
+    name: sales-stock-b
+
+app:
+  name: sales-stock-b
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml

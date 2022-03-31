@@ -1,0 +1,15 @@
+dubbo:
+  group: dev
+  registry:
+    address: nacos://tj1-b2c-systech-mione-test03.kscn:80
+  protocol:
+    port: 6666
+    dispatcher: message
+    threadpool: fixed
+    threads: 400
+    queues: 30000
+  qos:
+    enable: false
+  dubbo2:
+    group: dev
+
