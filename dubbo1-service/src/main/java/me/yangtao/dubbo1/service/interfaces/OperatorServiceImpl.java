@@ -38,7 +38,7 @@ public class OperatorServiceImpl implements OperatorService {
                 .selectUserBriefInfo(new UserBriefRequest().setUserId(request.getUserId()));
         if(userBriefResult.getCode() != ErrorCodes.OK){
             return Result.fail(ErrorCodes.SERVER_DEPENDENT_ERROR,
-                    "case selectUserBriefInfo code:" + userBriefResult.getCode())
+                    "case selectUserBriefInfo code:" + userBriefResult.getCode());
         }
         UserBriefInfoResponse userBriefResponse = userBriefResult.getData();
         OperatorResponse response = new OperatorResponse(userBriefResponse.getUserId(),
