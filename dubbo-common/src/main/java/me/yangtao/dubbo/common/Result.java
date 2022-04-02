@@ -35,6 +35,10 @@ public class Result<T> implements Serializable {
         return new Result<>(ErrorCodes.OK, "OK", data);
     }
 
+    public static <T> Result<T> success(String message, T data){
+        return new Result<>(ErrorCodes.OK, message, data);
+    }
+
     public static <T> Result<T> fail(ErrorCodes code, String message){
         return new Result<>(code, message, null);
     }

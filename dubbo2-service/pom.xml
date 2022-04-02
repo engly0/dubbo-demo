@@ -13,8 +13,6 @@
     <version>1.0.0-SNAPSHOT</version>
     <properties>
         <service_name>dubbo2-service</service_name>
-        <log_level>info</log_level>
-        <log-appender>A1</log-appender>
     </properties>
 
     <dependencies>
@@ -171,6 +169,8 @@
             <id>dev</id>
             <properties>
                 <profile_name>dev</profile_name>
+                <log_level>debug</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -183,6 +183,8 @@
             <id>staging</id>
             <properties>
                 <profile_name>staging</profile_name>
+                <log_level>debug</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <build>
             </build>
@@ -192,6 +194,8 @@
             <id>online</id>
             <properties>
                 <profile_name>online</profile_name>
+                <log_level>info</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <build>
             </build>
@@ -201,6 +205,8 @@
             <id>preview</id>
             <properties>
                 <profile_name>preview</profile_name>
+                <log_level>info</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <build>
             </build>
@@ -235,7 +241,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>me.yangtao.dubbo2.service.Main</mainClass>
+                    <mainClass>me.yangtao.dubbo2.service.Dubbo2Main</mainClass>
                 </configuration>
                 <executions>
                     <execution>

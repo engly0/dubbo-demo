@@ -1,3 +1,6 @@
+logging:
+  config: classpath:logconfig/logback-dev.xml
+
 dubbo:
   group: dev
   registry:
@@ -12,4 +15,5 @@ dubbo:
     enable: false
   dubbo1:
     group: dev
-
+  dubbo2:
+    group: dev

@@ -1,4 +1,4 @@
-package me.yangtao.dubbo2.service;
+package me.yangtao.dubbo1.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
@@ -19,11 +19,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableScheduling
 @EnableAsync
 @Slf4j
-public class Main {
+public class Dubbo1Main {
 
     public static void main(String... args) {
         try {
-            SpringApplication.run(Main.class, args);
+            SpringApplication.run(Dubbo1Main.class, args);
         } catch (Throwable throwable) {
             log.error(throwable.getMessage(), throwable);
             throw throwable;

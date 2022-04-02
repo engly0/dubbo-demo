@@ -13,8 +13,6 @@
     <version>1.0.0-SNAPSHOT</version>
     <properties>
         <service_name>web-demo</service_name>
-        <log_level>info</log_level>
-        <log-appender>A1</log-appender>
     </properties>
 
     <dependencies>
@@ -33,6 +31,12 @@
             <groupId>me.yangtao</groupId>
             <artifactId>dubbo1-api</artifactId>
             <version>${dubbo1-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>me.yangtao</groupId>
+            <artifactId>dubbo2-api</artifactId>
+            <version>${dubbo2-api.version}</version>
         </dependency>
 
         <dependency>
@@ -166,6 +170,8 @@
             <id>dev</id>
             <properties>
                 <profile_name>dev</profile_name>
+                <log_level>debug</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -178,6 +184,8 @@
             <id>staging</id>
             <properties>
                 <profile_name>staging</profile_name>
+                <log_level>debug</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <build>
             </build>
@@ -187,6 +195,8 @@
             <id>online</id>
             <properties>
                 <profile_name>online</profile_name>
+                <log_level>info</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <build>
             </build>
@@ -196,6 +206,8 @@
             <id>preview</id>
             <properties>
                 <profile_name>preview</profile_name>
+                <log_level>info</log_level>
+                <log-appender>appAsync</log-appender>
             </properties>
             <build>
             </build>

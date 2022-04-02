@@ -61,7 +61,7 @@
         </encoder>
     </appender>
 
-    <root level="info">
-        <appender-ref ref="A1"/>
+    <root level="debug">
+        <appender-ref ref="appAsync"/>
     </root>
 </included>
