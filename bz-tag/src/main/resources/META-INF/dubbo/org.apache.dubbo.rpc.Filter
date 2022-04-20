@@ -1,0 +1,2 @@
+tagConsumerFilter=me.yangtao.bz.tag.dubbo.TagConsumerFilter
+tagProviderFilter=me.yangtao.bz.tag.dubbo.TagProviderFilter

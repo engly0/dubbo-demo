@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: @profile_name@
+  application:
+    name: dubbo1-service
+
+server:
+  port: 8889
+
+app:
+  name: dubbo1-service
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
